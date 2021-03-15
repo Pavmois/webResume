@@ -1,0 +1,82 @@
+@import url('./__lang-en/header__lang-en.css');
+@import url('./__lang-ru/header__lang-ru.css');
+@import url('./__logo/header-logo.css');
+.header {
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-items: center;
+    margin-bottom: 48px;
+    
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-Medium.woff") format("woff"), url("../fonts/Inter/Inter-Medium.woff2") format("woff2");
+    font-family: 'Inter';
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-Bold.woff") format("woff"), url("../fonts/Inter/Inter-Bold.woff2") format("woff2");
+    font-family: 'Inter-Bold';
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-ExtraBold.woff") format("woff"), url("../fonts/Inter/Inter-ExtraBold.woff2") format("woff2");
+    font-family: 'Inter-ExtraBold';
+}
+
+@media screen and (min-width: 1280px) {
+    .header {
+        max-width: 1184px;
+        margin-top: 0px;
+        margin-bottom: 48px;
+    }
+}
+
+.header-title {
+    width: 100%;
+    font-family: Inter-ExtraBold;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 78px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-title {
+        font-size: 72px;
+        line-height: 78px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-title {
+        font-size: 42px;
+        line-height: 46px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header-title {
+        font-size: 32px;
+        line-height: 35px;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header-title {
+        font-size: 32px;
+        line-height: 35px;
+    }
+}

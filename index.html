@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./vendor/normalize.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Резюме Моисеева Павла</title>
+</head>
+
+<body>
+    <a href="#nav" class="comback__button" id="upbutton" onclick="jumpUp(); return false; ">&and;</a>
+
+    <div class="page">
+        <header class="header">
+            <h2 class="header-title">Сайт-резюме</h2>
+        </header>
+
+        <section class="navigation" id="nav">
+            <ul class="menu-main">
+                <li><a class="menu-main__title" href="#about">Обо мне</a></li>
+                <li><a class="menu-main__title" href="#hardSkill">Hard Skills</a></li>
+                <li><a class="menu-main__title" href="#content">Кнопки Эффектов</a></li>
+                <li><a class="menu-main__title" href="#softSkill">Soft Skills</a></li>
+                <li><a class="menu-main__title" href="#outro">Заключение</a></li> 
+            </ul>
+        </section>
+
+        <section class="cover">
+            <h2 class="cover__title">8-800-555-35-35*</h2>
+            <p class="cover__subtitle">*Совершенно случайный номер для связи :)</p>
+            <img class="cover-bg" src="./images/Reklama.jpg" alt="">
+        </section>
+
+        <section class="intro">
+            <h2 class="intro__title" id="about">Обо мне</h2>
+            <div class="content-row">
+                <p align = 'justify' class="content-row__text">Доброго времени суток! Меня зовут Моисеев Павел и я - <a style="color:#f15e5e">Junior Fronted-разработчик.</a><br /><br />
+
+                   Мне 29 лет, имею <a style="color:#f15e5e">высшее техническое образование</a> по специальности "Автоматизация технологических процессов и производств", полученное в НИУ МЭИ. Также был аспирантом на кафедре
+                   вычислительных систем реального времени в МИРЭА.<br /><br />
+
+                    Помимо профильного образования прошёл курсы повышения квалификации в <a style="color:#f15e5e">Яндекс.Практикум</a> по специализации "Fronted-разработчик". Также закончил ряд курсов на
+                    <a style="color:#f15e5e">онлайн-плафтформе Stepik </a> <br /><br />
+                    
+                    Обучаясь в Яндекс.Практикум, я освоил основные принципы ведения разработки, ведь почти год учёба шла по <a style="color:#f15e5e">scrum-методологии</a>. <br /><br />
+
+                    Имею больше 7 лет рабочего стажа, в должности инженера-разработчика, приобретенного на военно-промышленном концерне "АО Моринформсистема-Агат". 
+                </p>
+            </div>
+        </section>
+        
+        <div class="slider">
+            <div class="item">
+                <img src="./images/1.jpg" alt="Первый слайд" onclick="plusSlide()">
+            </div>
+          
+            <div class="item">
+                <img src="./images/3.jpg" alt="Второй слайд" onclick="plusSlide()">
+            </div>
+          
+            <div class="item">
+                <img src="./images/5.jpg" alt="Третий слайд" onclick="plusSlide()">
+            </div>
+        </div>
+
+        <section class="intro">
+            <h2 class="intro__title" id="hardSkill">Технические навыки</h2>
+            <div class="content-row">
+                <p align = 'justify' class="content-row__text">
+                    - Javascript: ООП, асинхронность, API, NodeJS, npm; <br></br>
+                    - HTML\CSS: flexbox, grid, анимации (как на чистом CSS, так и на JS), адаптивность и кроссбраузерность, разработка по БЭМ методологии, построение DOM-дерева;. <br></br>
+                    - Figma: адаптивная верстка по макету. <br></br>
+                </p>
+            </div>
+        </section>
+
+
+        <section class="content">
+            <h2 class="content-title" id="content">Кнопки эффектов</h2>
+            <p class="content-subtitle">Чтобы сайт-резюме не превратился в сухое перечисление фактов, я решил добавить эти кнопки эффектов посередине сайта, как для 
+                развлечения читающего, так и для демонстрации навыков анимации. <br></br>
+                При наведении на каждую всплывёт подсказка с описанием.
+            </p>
+            <div class="content__container">
+                <div class="container__item rainbow" id="rainbow" data-description="Цвет фона" onclick="changeColor()"></div>
+                <div class="container__item sound" id="sound" data-description="Вжух!" onclick="document.getElementById('sound1').play();"><audio id="sound1" src="./images/Whoosh.mp3" preload="auto"></audio></div>
+                <div class="container__item vibro" id="vibro" data-description="Вибрация" onclick="vibrate(1000);"></div>
+                <div class="container__item imageSur" id="imageSur" data-description="Круг/Квадрат" onclick="changeForm()"></div>
+                <div class="container__item snowone" name = "blya" id="snow" data-description="Бесконечный снег!" onclick="letItSnow()"></div>
+            </div>
+        </section>
+        
+        <section class="intro">
+            <h2 class="intro__title" id="softSkill">Личные качества</h2>
+            <div class="content-row">
+                <p align = 'justify' class="content-row__text">
+                    - Трудолюбивый. Нахожусь в непрерывном процессе изучения актуальных технологий Фронтенда: в данный момент прохожу курс по VueJS. <br></br>
+                    - Дисциплинированный (привык работать по scrum). <br></br>
+                    - Общительный. Обладаю развитым эмоциональным интеллектом (фронтмен музыкальной группы, имею опыт выступления перед большой аудиторией). <br></br>
+                </p>
+            </div>
+        </section>
+        
+        <div class="secondSlider">
+            <div class="secondItem">
+                <img src="./images/4.jpg" alt="Первый слайд" onclick="plusSecSlide()">
+            </div>
+        
+            <div class="secondItem">
+                <img src="./images/7.jpg" alt="Третий слайд" onclick="plusSecSlide()">
+            </div>
+
+            <div class="secondItem">
+                <img src="./images/8.jpg" alt="Четвёртый слайд" onclick="plusSecSlide()">
+            </div>
+          
+            <a class="prev" onclick="minusSecSlide()">❮</a>
+            <a class="next" onclick="plusSecSlide()">❯</a>
+          </div>
+
+
+        <section class="intro">
+            <h2 class="intro__title" id="outro">Заключение</h2>
+            <div class="content-row">
+                <p align = 'justify' class="content-row__text">
+                    Данный сайт являет собой пример кроссбраузерного, адаптивного сайта с реализацией слайдеров 
+                    и различных эффектов на "ванильном" JavaScript. Ознакомиться с другими моим проектами можно на <a href="https://github.com/Pavmois?tab=repositories" style="color:#bbff00;">GitHub.</a> <br /><br />
+                    Там же Вы сможете найти примеры работ с такими технологиями как  <a style="color:#f15e5e;">npm, webpack, node.js, mongo.db, postman</a> и др.<br />
+                    </p>
+            </div>
+        </section>
+          
+
+        <footer class="footer" id="links">
+            <div class="footer__container">
+                <a href="https://github.com/Pavmois?tab=repositories" class="footer__link">GitHub</a>
+            </div>
+        </footer>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

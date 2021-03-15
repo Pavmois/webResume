@@ -1,0 +1,96 @@
+@import url('./__title/cover__title.css');
+@import url('./__subtitle/cover__subtitle.css');
+@import url('./cover-bg/cover-bg.css');
+.cover {
+    position: relative;
+    width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover:hover .cover__title  {
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+.cover:hover .cover__subtitle  {
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-Medium.woff") format("woff"), url("../fonts/Inter/Inter-Medium.woff2") format("woff2");
+    font-family: 'Inter';
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-Bold.woff") format("woff"), url("../fonts/Inter/Inter-Bold.woff2") format("woff2");
+    font-family: 'Inter-Bold';
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-ExtraBold.woff") format("woff"), url("../fonts/Inter/Inter-ExtraBold.woff2") format("woff2");
+    font-family: 'Inter-ExtraBold';
+}
+
+@media screen and (max-width: 2560px) {
+    .cover {
+        width: 30%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .cover {
+        width: 60%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cover {
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .cover {
+        width: 60%;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cover {
+        width: 70%;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .cover {
+        width: 90%;
+        margin-bottom: -50px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cover {
+        width: 90%;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cover {
+        width: 90%;
+        margin-top: 0px;
+        margin-bottom: -50px;
+    }
+}

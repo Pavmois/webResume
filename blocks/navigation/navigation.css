@@ -1,0 +1,59 @@
+@import url(./__menu-main/menu-main.css);
+
+.navigation {
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-items: center;
+    margin-bottom: 0px;
+    
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-Medium.woff") format("woff"), url("../fonts/Inter/Inter-Medium.woff2") format("woff2");
+    font-family: 'Inter';
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-Bold.woff") format("woff"), url("../fonts/Inter/Inter-Bold.woff2") format("woff2");
+    font-family: 'Inter-Bold';
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-ExtraBold.woff") format("woff"), url("../fonts/Inter/Inter-ExtraBold.woff2") format("woff2");
+    font-family: 'Inter-ExtraBold';
+}
+
+@media screen and (min-width: 1280px) {
+    .navigation {
+        max-width: 1184px;
+        margin-top: 0px;
+        margin-bottom: 48px;
+        
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .navigation {
+        width: 75%;
+        flex-direction: column;
+        
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .navigation {
+        width: 75%;
+        flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .navigation {
+        width: 60%;
+    }
+  }

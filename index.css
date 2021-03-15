@@ -1,0 +1,57 @@
+@import url('./blocks/header/header.css');
+@import url('./blocks/lead/lead.css');
+@import url('./blocks/intro/intro.css');
+@import url('./blocks/photo-grid/photo-grid.css');
+@import url('./blocks/places/places.css');
+@import url('./blocks/content/content.css');
+@import url('./blocks/comments/comments.css');
+@import url('./blocks/cover/cover.css');
+@import url('./blocks/footer/footer.css');
+@import url('./blocks/navigation/navigation.css');
+@import url('./blocks/slider/slider.css');
+@import url('./blocks/buttons/buttons.css');
+.page {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    margin-bottom: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background: #000;    /* #2A2C2F #1a1717a2 */  
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s linear;
+    color: #bbff00;
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-Medium.woff") format("woff"), url("../fonts/Inter/Inter-Medium.woff2") format("woff2");
+    font-family: 'Inter';
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-Bold.woff") format("woff"), url("../fonts/Inter/Inter-Bold.woff2") format("woff2");
+    font-family: 'Inter-Bold';
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-Black.woff") format("woff"), url("../fonts/Inter/Inter-Black.woff2") format("woff2");
+    font-family: 'Inter-ExtraBold';
+}
+
+ 
+

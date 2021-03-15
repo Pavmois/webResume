@@ -1,0 +1,33 @@
+.content-row__text {
+    width: 100%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 375px) {
+    .content-row__text {
+        width: 343px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 27px;
+        margin-top: -10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .content-row__text {
+        width: 288px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 27px;
+        margin-top: -10px;
+    }
+}

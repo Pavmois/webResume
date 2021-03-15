@@ -1,0 +1,39 @@
+@import url('./item/container_item.css');
+.content__container {
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px) {
+    .content__container {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content__container {
+        flex-direction: row; 
+        margin-top: 56px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .content__container {
+        flex-direction: raw;
+        align-items: center;
+        flex-flow: column wrap;
+
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .content__container {
+        flex-direction: column;
+    }
+}

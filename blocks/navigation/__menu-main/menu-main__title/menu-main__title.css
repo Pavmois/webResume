@@ -1,0 +1,12 @@
+.menu-main__title {
+    width: 100%;
+    font-family: Inter-ExtraBold;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 59px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    left: -50px;
+    color: #ffff;
+}

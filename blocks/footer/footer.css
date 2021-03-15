@@ -1,0 +1,72 @@
+@import url('./__container/footer__container.css');
+@import url('./copyright/footer__copyright.css');
+.footer {
+    margin-top: 0px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-Medium.woff") format("woff"), url("../fonts/Inter/Inter-Medium.woff2") format("woff2");
+    font-family: 'Inter';
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-Bold.woff") format("woff"), url("../fonts/Inter/Inter-Bold.woff2") format("woff2");
+    font-family: 'Inter-Bold';
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-ExtraBold.woff") format("woff"), url("../fonts/Inter/Inter-ExtraBold.woff2") format("woff2");
+    font-family: 'Inter-ExtraBold';
+}
+
+@media screen and (min-width: 1280px) {
+    .footer {
+        max-width: 1184px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        width: 90%;
+        margin-top: 0px;
+        margin-left: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        width: 94%;
+        margin-top: 64px;
+        margin-left: 23px;
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer {
+        width: 75%;
+        margin-left: 23px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer {
+        width: 75%;
+        margin-top: 10px;
+        margin-left: 23px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer {
+        width: 60%;
+        margin-left: 23px;
+    }
+}
